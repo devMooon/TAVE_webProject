@@ -4,10 +4,20 @@
       <a v-for="(a, i) in menus" :key="i">{{a}}</a>
     </div>
 
-    <div v-for="(a, i) in 3" :key="i">
-      <h4>{{products[i]}}</h4>
-      <p>{{price[i]}} 만원</p>
-      <button @click="increase(i)">허위매물신고</button> <span>신고수 : {{신고수[i]}}</span>
+    <div>
+      <h4>{{products[0]}}</h4>
+      <p>{{price[0]}} 만원</p>
+      <button @click="increase(0)">허위매물신고</button> <span>신고수 : {{신고수[0]}}</span>
+    </div>
+    <div>
+      <h4>{{products[1]}}</h4>
+      <p>{{price[1]}} 만원</p>
+      <button @click="increase(1)">허위매물신고</button> <span>신고수 : {{신고수[1]}}</span>
+    </div>
+    <div>
+      <h4>{{products[2]}}</h4>
+      <p>{{price[2]}} 만원</p>
+      <button @click="increase(2)">허위매물신고</button> <span>신고수 : {{신고수[2]}}</span>
     </div>
   </div>
 </template>
